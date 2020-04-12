@@ -1,0 +1,13 @@
+..\output\lora.o: Lora.c
+..\output\lora.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\lora.o: ..\Libraries\CMSIS\core_cm3.h
+..\output\lora.o: Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\lora.o: ..\Libraries\CMSIS\system_stm32f10x.h
+..\output\lora.o: ..\User\stm32f10x_conf.h
+..\output\lora.o: ..\Libraries\inc\stm32f10x_exti.h
+..\output\lora.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\lora.o: ..\Libraries\inc\stm32f10x_flash.h
+..\output\lora.o: ..\Libraries\inc\stm32f10x_gpio.h
+..\output\lora.o: ..\Libraries\inc\stm32f10x_rcc.h
+..\output\lora.o: ..\Libraries\inc\stm32f10x_usart.h
+..\output\lora.o: ..\Libraries\inc\misc.h
