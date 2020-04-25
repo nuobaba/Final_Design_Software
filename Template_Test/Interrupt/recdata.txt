@@ -1,0 +1,36 @@
+void USART3_IRQHandler(void)
+{
+if(USART_GetFlagStatus(USART3, USART_FLAG_ORE) == SET) //若为溢出中断
+{
+(u16)(USART3->DR & (u16)0x01FF);
+}
+if(USART_GetFlagStatus(USART3, USART_FLAG_RXNE) == SET) //若为接收中断
+{
+USARTRX_DATA[Int_Count] = USART_ReceiveData(USART3);
+LED2_OFF();
+/* if(i==0)
+{
+if(USARTRX_DATA[0]==0xaa)i++;//判断帧头0xaa和0x55
+}
+else if(i==1)
+{
+if(USARTRX_DATA[1]==0x55)i++;
+else i=0;
+}
+else i++; */
+// USART_SendData(USART3, USARTRX_DATA[Int_Count]); //接受到的数据，原样回发
+
+Int_Count++;
+if(Int_Count>9)//接收区满
+{
+Int_Count = 0 ;
+FullFlag = 1 ;
+}
+/* Loop until the end of transmission */
+// while(!(USART_GetFlagStatus(USART3, USART_FLAG_TXE) == SET)){}
+LED2_ON();
+}
+
+USART_ClearITPendingBit(USART3,USART_IT_RXNE);
+USART_ClearITPendingBit(USART3,USART_IT_TXE);
+}

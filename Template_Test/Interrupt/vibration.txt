@@ -1,0 +1,33 @@
+
+//initial the sensor`s GPIO
+
+GPIO_InitTypeDef GPIO_InitStructure;
+
+GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_0;   //PA0用于光敏电阻 
+GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_1;   //PA1用于摄像头 
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING; 
+GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  
+GPIO_Init(GPIOA, &GPIO_InitStructure); 
+
+
+void recdata()
+{
+
+while(1){
+        
+        if( GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)==0)
+        GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)==0
+        delay_ms(100);     //延时函数 0.1S
+  }
+
+	int sensordata; 
+	sensordata=recdata();
+	if(sensordata==1)
+	delay_ms(1000);
+{
+	if (sensordata==1)//去抖
+
+	GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_1)==0//如果确实振动，使能摄像头
+	//这应该是一个输出函数
+}
+

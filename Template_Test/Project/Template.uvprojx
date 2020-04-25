@@ -570,6 +570,16 @@
               <FileType>5</FileType>
               <FilePath>.\lora.h</FilePath>
             </File>
+            <File>
+              <FileName>USART_header.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USART_header.c</FilePath>
+            </File>
+            <File>
+              <FileName>USART_header.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\USART_header.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
