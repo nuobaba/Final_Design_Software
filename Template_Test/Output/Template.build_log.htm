@@ -22,35 +22,56 @@ Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
 Y:\Study\Final_Design\Circuit\Template_Test\Project\Template.uvprojx
-Project File Date:  03/30/2020
+Project File Date:  04/29/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Template'
 compiling Lora.c...
-Lora.c(65): warning:  #940-D: missing return statement at end of non-void function "LoraInit" 
+Lora.c(67): warning:  #940-D: missing return statement at end of non-void function "LoraInit" 
   }
-Lora.c(75): error:  #525: a dependent statement may not be a declaration
+Lora.c(77): error:  #525: a dependent statement may not be a declaration
   		uint8_t data;             
-Lora.c(75): warning:  #177-D: variable "data"  was declared but never referenced
+Lora.c(77): warning:  #177-D: variable "data"  was declared but never referenced
   		uint8_t data;             
-Lora.c(76): error:  #20: identifier "data" is undefined
+Lora.c(78): error:  #20: identifier "data" is undefined
   		data = USART_ReceiveData(USART1);        //receive data from the lora from the sensor¡¢
-Lora.c(86): error:  #137: expression must be a modifiable lvalue
+Lora.c(87): error:  #140: too many arguments in function call
+  	X = GPIO_ReadInputData(
+PIOB,
+PIO_Pin_5);
+Lora.c(90): error:  #142: expression must have pointer-to-object type
   	
 SART1_BASE << i = X[i];
-Lora.c(87): error:  #137: expression must be a modifiable lvalue
+Lora.c(90): error:  #137: expression must be a modifiable lvalue
+  	
+SART1_BASE << i = X[i];
+Lora.c(91): error:  #142: expression must have pointer-to-object type
   	
 SART1_BASE << (i+8) = Y[i];
-Lora.c(88): error:  #137: expression must be a modifiable lvalue
+Lora.c(91): error:  #137: expression must be a modifiable lvalue
+  	
+SART1_BASE << (i+8) = Y[i];
+Lora.c(92): error:  #142: expression must have pointer-to-object type
   	
 SART1_BASE << (i+16) = Z[i];
-Lora.c(90): warning:  #1-D: last line of file ends without a newline
+Lora.c(92): error:  #137: expression must be a modifiable lvalue
+  	
+SART1_BASE << (i+16) = Z[i];
+Lora.c(97): warning:  #940-D: missing return statement at end of non-void function "LoraCtrl" 
   }
-Lora.c(90): warning:  #940-D: missing return statement at end of non-void function "LoraCtrl" 
-  }
-Lora.c: 4 warnings, 5 errors
-"..\Output\Template.axf" - 5 Error(s), 4 Warning(s).
+Lora.c(127): error:  #112: expected "while"
+  	}		
+Lora.c(127): error:  #125: expected a "("
+  	}		
+Lora.c(127): error:  #29: expected an expression
+  	}		
+Lora.c(127): error:  #18: expected a ")"
+  	}		
+Lora.c(127): error:  #65: expected a ";"
+  	}		
+Lora.c: 3 warnings, 14 errors
+"..\Output\Template.axf" - 14 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -65,7 +86,7 @@ Package Vendor: Keil
 
 <h2>Collection of Component Files used:</h2>
 Target not created.
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

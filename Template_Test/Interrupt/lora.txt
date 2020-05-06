@@ -1,0 +1,43 @@
+uint_8_t MD0;
+uint_8_t MD1;
+uint_8_t aux;
+
+
+void intial_lora()
+{
+GPIO_TypeDefine LORAInit;
+
+
+
+
+GPIOB_Pin_0  = GPIOSendata(USART2,MD0);
+GPIOB_Pin_1 = GPIOSendata(USART3,MD01);
+}
+
+void reclora()//指示状态控制收方单片机
+{
+if (aux = 0)
+
+{
+}
+else
+{
+
+}
+
+
+
+}
+
+
+
+void main()
+{
+MD0=     ;//select the lora`s mode
+MD1=     ;
+intial_lora();
+
+aux = GPIOB_Pin_2;
+
+
+}

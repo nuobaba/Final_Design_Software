@@ -349,7 +349,7 @@ I (..\Libraries\inc\stm32f10x_rcc.h)(0x4CBC3904)
 I (..\Libraries\inc\stm32f10x_usart.h)(0x4CBC3904)
 I (..\Libraries\inc\misc.h)(0x4CBC3904)
 F (.\vibration.h)(0x5E846DE4)()
-F (.\Lora.c)(0x5E846F14)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS -I ..\Libraries\inc -I ..\User -I ..\Project-I.\RTE\_Template-IZ:\anzhuang\Keil_v5ARMPACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IZ:\biaozhun\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o ..\output\lora.o --omf_browse ..\output\lora.crf --depend ..\output\lora.d)
+F (.\Lora.c)(0x5EA9A742)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS -I ..\Libraries\inc -I ..\User -I ..\Project-I.\RTE\_Template-IZ:\anzhuang\Keil_v5ARMPACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IZ:\biaozhun\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o ..\output\lora.o --omf_browse ..\output\lora.crf --depend ..\output\lora.d)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x4CBC3900)
 I (..\Libraries\CMSIS\core_cm3.h)(0x4CBC3900)
 I (Z:\biaozhun\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -362,3 +362,29 @@ I (..\Libraries\inc\stm32f10x_rcc.h)(0x4CBC3904)
 I (..\Libraries\inc\stm32f10x_usart.h)(0x4CBC3904)
 I (..\Libraries\inc\misc.h)(0x4CBC3904)
 F (.\lora.h)(0x5E80CD1C)()
+F (.\USART_header.c)(0x5E953776)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS -I ..\Libraries\inc -I ..\User -I ..\Project-I.\RTE\_Template-IZ:\anzhuang\Keil_v5ARMPACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IZ:\biaozhun\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o ..\output\usart_header.o --omf_browse ..\output\usart_header.crf --depend ..\output\usart_header.d)
+I (..\Libraries\CMSIS\stm32f10x.h)(0x4CBC3900)
+I (..\Libraries\CMSIS\core_cm3.h)(0x4CBC3900)
+I (Z:\biaozhun\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (..\Libraries\CMSIS\system_stm32f10x.h)(0x4CBC3900)
+I (..\User\stm32f10x_conf.h)(0x4CBD68EA)
+I (..\Libraries\inc\stm32f10x_exti.h)(0x4CBC3904)
+I (..\Libraries\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (..\Libraries\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (..\Libraries\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (..\Libraries\inc\stm32f10x_usart.h)(0x4CBC3904)
+I (..\Libraries\inc\misc.h)(0x4CBC3904)
+F (.\USART_header.h)(0x5E953778)()
+F (.\sensor.c)(0x5EA9A730)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS -I ..\Libraries\inc -I ..\User -I ..\Project-I.\RTE\_Template-IZ:\anzhuang\Keil_v5ARMPACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IZ:\biaozhun\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o ..\output\sensor.o --omf_browse ..\output\sensor.crf --depend ..\output\sensor.d)
+I (..\Libraries\CMSIS\stm32f10x.h)(0x4CBC3900)
+I (..\Libraries\CMSIS\core_cm3.h)(0x4CBC3900)
+I (Z:\biaozhun\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (..\Libraries\CMSIS\system_stm32f10x.h)(0x4CBC3900)
+I (..\User\stm32f10x_conf.h)(0x4CBD68EA)
+I (..\Libraries\inc\stm32f10x_exti.h)(0x4CBC3904)
+I (..\Libraries\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (..\Libraries\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (..\Libraries\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (..\Libraries\inc\stm32f10x_usart.h)(0x4CBC3904)
+I (..\Libraries\inc\misc.h)(0x4CBC3904)
+F (.\sensor.h)(0x5EA8F866)()

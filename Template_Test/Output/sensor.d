@@ -1,0 +1,13 @@
+..\output\sensor.o: sensor.c
+..\output\sensor.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\sensor.o: ..\Libraries\CMSIS\core_cm3.h
+..\output\sensor.o: Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\sensor.o: ..\Libraries\CMSIS\system_stm32f10x.h
+..\output\sensor.o: ..\User\stm32f10x_conf.h
+..\output\sensor.o: ..\Libraries\inc\stm32f10x_exti.h
+..\output\sensor.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\sensor.o: ..\Libraries\inc\stm32f10x_flash.h
+..\output\sensor.o: ..\Libraries\inc\stm32f10x_gpio.h
+..\output\sensor.o: ..\Libraries\inc\stm32f10x_rcc.h
+..\output\sensor.o: ..\Libraries\inc\stm32f10x_usart.h
+..\output\sensor.o: ..\Libraries\inc\misc.h

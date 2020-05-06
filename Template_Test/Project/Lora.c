@@ -129,4 +129,4 @@ void Usart_SendStr(USART_TypeDef* pUSARTx, char *str)
 		
 	
 		
-			USART_DR_DR;
+			//USART_DR_DR;
