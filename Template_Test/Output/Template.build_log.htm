@@ -22,12 +22,14 @@ Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
 Y:\Study\Final_Design\Circuit\Template_Test\Project\Template.uvprojx
-Project File Date:  04/29/2020
+Project File Date:  05/11/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Template'
 compiling Lora.c...
+Lora.c(14): warning:  #223-D: function "RCC_AHB1PeriphCmd" declared implicitly
+  	   RCC_AHB1PeriphCmd(RCC_APB1Periph_USART3, ENABLE);
 Lora.c(67): warning:  #940-D: missing return statement at end of non-void function "LoraInit" 
   }
 Lora.c(77): error:  #525: a dependent statement may not be a declaration
@@ -70,8 +72,34 @@ Lora.c(127): error:  #18: expected a ")"
   	}		
 Lora.c(127): error:  #65: expected a ";"
   	}		
-Lora.c: 3 warnings, 14 errors
-"..\Output\Template.axf" - 14 Error(s), 3 Warning(s).
+Lora.c: 4 warnings, 14 errors
+compiling main.c...
+..\Project\vibration.h(29): warning:  #550-D: parameter "RecData"  was set but never used
+  void USART_RecByte( USART_TypeDef * pUSARTx, uint16_t RecData)
+..\Project\vibration.h(50): warning:  #223-D: function "Usart_RecByte" declared implicitly
+   Usart_RecByte( pUSARTx, *(str + k) );
+..\Project\vibration.h(62): warning:  #1-D: last line of file ends without a newline
+   #endif
+..\Project\Lora.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c: 4 warnings, 0 errors
+compiling vibration.c...
+vibration.h(29): warning:  #550-D: parameter "RecData"  was set but never used
+  void USART_RecByte( USART_TypeDef * pUSARTx, uint16_t RecData)
+vibration.h(50): warning:  #223-D: function "Usart_RecByte" declared implicitly
+   Usart_RecByte( pUSARTx, *(str + k) );
+vibration.h(62): warning:  #1-D: last line of file ends without a newline
+   #endif
+vibration.c(32): warning:  #223-D: function "RCC_AHB1PeriphCmd" declared implicitly
+  	   RCC_AHB1PeriphCmd(RCC_APB1Periph_USART3, ENABLE);
+vibration.c(75): warning:  #550-D: variable "data0"  was set but never used
+  uint16_t data0;	
+vibration.c(76): warning:  #550-D: variable "data1"  was set but never used
+  uint16_t data1;
+vibration.c(102): warning:  #177-D: variable "RxData"  was declared but never referenced
+  uint16_t RxData; 
+vibration.c: 7 warnings, 0 errors
+"..\Output\Template.axf" - 14 Error(s), 15 Warning(s).
 
 <h2>Software Packages used:</h2>
 

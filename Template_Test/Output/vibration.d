@@ -11,3 +11,4 @@
 ..\output\vibration.o: ..\Libraries\inc\stm32f10x_rcc.h
 ..\output\vibration.o: ..\Libraries\inc\stm32f10x_usart.h
 ..\output\vibration.o: ..\Libraries\inc\misc.h
+..\output\vibration.o: vibration.h
