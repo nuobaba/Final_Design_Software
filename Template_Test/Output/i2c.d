@@ -1,0 +1,14 @@
+..\output\i2c.o: I2C.c
+..\output\i2c.o: I2C.h
+..\output\i2c.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\i2c.o: ..\Libraries\CMSIS\core_cm3.h
+..\output\i2c.o: Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\i2c.o: ..\Libraries\CMSIS\system_stm32f10x.h
+..\output\i2c.o: ..\User\stm32f10x_conf.h
+..\output\i2c.o: ..\Libraries\inc\stm32f10x_exti.h
+..\output\i2c.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\i2c.o: ..\Libraries\inc\stm32f10x_flash.h
+..\output\i2c.o: ..\Libraries\inc\stm32f10x_gpio.h
+..\output\i2c.o: ..\Libraries\inc\stm32f10x_rcc.h
+..\output\i2c.o: ..\Libraries\inc\stm32f10x_usart.h
+..\output\i2c.o: ..\Libraries\inc\misc.h

@@ -551,16 +551,6 @@
           <GroupName>HARDWARE</GroupName>
           <Files>
             <File>
-              <FileName>vibration.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\vibration.c</FilePath>
-            </File>
-            <File>
-              <FileName>vibration.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\vibration.h</FilePath>
-            </File>
-            <File>
               <FileName>Lora.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Lora.c</FilePath>
@@ -569,16 +559,6 @@
               <FileName>lora.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\lora.h</FilePath>
-            </File>
-            <File>
-              <FileName>USART_header.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USART_header.c</FilePath>
-            </File>
-            <File>
-              <FileName>USART_header.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\USART_header.h</FilePath>
             </File>
             <File>
               <FileName>sensor.c</FileName>
@@ -599,6 +579,56 @@
               <FileName>motor.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\motor.h</FilePath>
+            </File>
+            <File>
+              <FileName>vibration_receive.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\vibration_receive.c</FilePath>
+            </File>
+            <File>
+              <FileName>vibration_receive.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\vibration_receive.h</FilePath>
+            </File>
+            <File>
+              <FileName>IIC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\IIC.c</FilePath>
+            </File>
+            <File>
+              <FileName>IIC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\IIC.h</FilePath>
+            </File>
+            <File>
+              <FileName>Angle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Angle.c</FilePath>
+            </File>
+            <File>
+              <FileName>bitoperation.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bitoperation.h</FilePath>
+            </File>
+            <File>
+              <FileName>sys.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\sys.h</FilePath>
+            </File>
+            <File>
+              <FileName>Angle.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Angle.h</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\delay.h</FilePath>
             </File>
           </Files>
         </Group>

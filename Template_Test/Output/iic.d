@@ -1,0 +1,16 @@
+..\output\iic.o: IIC.c
+..\output\iic.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\iic.o: ..\Libraries\CMSIS\core_cm3.h
+..\output\iic.o: Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\iic.o: ..\Libraries\CMSIS\system_stm32f10x.h
+..\output\iic.o: ..\User\stm32f10x_conf.h
+..\output\iic.o: ..\Libraries\inc\stm32f10x_exti.h
+..\output\iic.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\iic.o: ..\Libraries\inc\stm32f10x_flash.h
+..\output\iic.o: ..\Libraries\inc\stm32f10x_gpio.h
+..\output\iic.o: ..\Libraries\inc\stm32f10x_rcc.h
+..\output\iic.o: ..\Libraries\inc\stm32f10x_usart.h
+..\output\iic.o: ..\Libraries\inc\misc.h
+..\output\iic.o: IIC.h
+..\output\iic.o: sys.h
+..\output\iic.o: delay.h

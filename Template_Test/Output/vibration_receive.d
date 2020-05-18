@@ -1,0 +1,14 @@
+..\output\vibration_receive.o: vibration_receive.c
+..\output\vibration_receive.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\vibration_receive.o: ..\Libraries\CMSIS\core_cm3.h
+..\output\vibration_receive.o: Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\vibration_receive.o: ..\Libraries\CMSIS\system_stm32f10x.h
+..\output\vibration_receive.o: ..\User\stm32f10x_conf.h
+..\output\vibration_receive.o: ..\Libraries\inc\stm32f10x_exti.h
+..\output\vibration_receive.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\vibration_receive.o: ..\Libraries\inc\stm32f10x_flash.h
+..\output\vibration_receive.o: ..\Libraries\inc\stm32f10x_gpio.h
+..\output\vibration_receive.o: ..\Libraries\inc\stm32f10x_rcc.h
+..\output\vibration_receive.o: ..\Libraries\inc\stm32f10x_usart.h
+..\output\vibration_receive.o: ..\Libraries\inc\misc.h
+..\output\vibration_receive.o: vibration_receive.h

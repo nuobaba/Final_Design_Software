@@ -1,0 +1,16 @@
+..\output\angle.o: Angle.c
+..\output\angle.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\angle.o: ..\Libraries\CMSIS\core_cm3.h
+..\output\angle.o: Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\angle.o: ..\Libraries\CMSIS\system_stm32f10x.h
+..\output\angle.o: ..\User\stm32f10x_conf.h
+..\output\angle.o: ..\Libraries\inc\stm32f10x_exti.h
+..\output\angle.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\angle.o: ..\Libraries\inc\stm32f10x_flash.h
+..\output\angle.o: ..\Libraries\inc\stm32f10x_gpio.h
+..\output\angle.o: ..\Libraries\inc\stm32f10x_rcc.h
+..\output\angle.o: ..\Libraries\inc\stm32f10x_usart.h
+..\output\angle.o: ..\Libraries\inc\misc.h
+..\output\angle.o: IIC.h
+..\output\angle.o: sys.h
+..\output\angle.o: delay.h

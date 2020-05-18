@@ -56,9 +56,24 @@ int 	QMCInit(void)
 		
 		NVIC_Init(&QMC_NVIC_Init);
 		
+
+/*满足条件进入中断*/
+	  USART_ITConfig(USART1,USART_IT_RXNE,ENABLE);
 		
-		
-		
+
+}
+
+
+
+
+
+
+
+void USART1_IRQHandler(void)
+{
+
+
+
 
 
 }

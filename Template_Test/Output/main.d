@@ -11,5 +11,4 @@
 ..\output\main.o: ..\Libraries\inc\stm32f10x_rcc.h
 ..\output\main.o: ..\Libraries\inc\stm32f10x_usart.h
 ..\output\main.o: ..\Libraries\inc\misc.h
-..\output\main.o: ..\Project\vibration.h
 ..\output\main.o: ..\Project\Lora.h

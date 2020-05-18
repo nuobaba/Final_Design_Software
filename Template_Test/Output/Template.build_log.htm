@@ -22,84 +22,25 @@ Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
 Y:\Study\Final_Design\Circuit\Template_Test\Project\Template.uvprojx
-Project File Date:  05/11/2020
+Project File Date:  05/19/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Template'
-compiling Lora.c...
-Lora.c(14): warning:  #223-D: function "RCC_AHB1PeriphCmd" declared implicitly
-  	   RCC_AHB1PeriphCmd(RCC_APB1Periph_USART3, ENABLE);
-Lora.c(67): warning:  #940-D: missing return statement at end of non-void function "LoraInit" 
-  }
-Lora.c(77): error:  #525: a dependent statement may not be a declaration
-  		uint8_t data;             
-Lora.c(77): warning:  #177-D: variable "data"  was declared but never referenced
-  		uint8_t data;             
-Lora.c(78): error:  #20: identifier "data" is undefined
-  		data = USART_ReceiveData(USART1);        //receive data from the lora from the sensor¡¢
-Lora.c(87): error:  #140: too many arguments in function call
-  	X = GPIO_ReadInputData(
-PIOB,
-PIO_Pin_5);
-Lora.c(90): error:  #142: expression must have pointer-to-object type
-  	
-SART1_BASE << i = X[i];
-Lora.c(90): error:  #137: expression must be a modifiable lvalue
-  	
-SART1_BASE << i = X[i];
-Lora.c(91): error:  #142: expression must have pointer-to-object type
-  	
-SART1_BASE << (i+8) = Y[i];
-Lora.c(91): error:  #137: expression must be a modifiable lvalue
-  	
-SART1_BASE << (i+8) = Y[i];
-Lora.c(92): error:  #142: expression must have pointer-to-object type
-  	
-SART1_BASE << (i+16) = Z[i];
-Lora.c(92): error:  #137: expression must be a modifiable lvalue
-  	
-SART1_BASE << (i+16) = Z[i];
-Lora.c(97): warning:  #940-D: missing return statement at end of non-void function "LoraCtrl" 
-  }
-Lora.c(127): error:  #112: expected "while"
-  	}		
-Lora.c(127): error:  #125: expected a "("
-  	}		
-Lora.c(127): error:  #29: expected an expression
-  	}		
-Lora.c(127): error:  #18: expected a ")"
-  	}		
-Lora.c(127): error:  #65: expected a ";"
-  	}		
-Lora.c: 4 warnings, 14 errors
-compiling main.c...
-..\Project\vibration.h(29): warning:  #550-D: parameter "RecData"  was set but never used
+compiling vibration_receive.c...
+vibration_receive.h(28): warning:  #550-D: parameter "RecData"  was set but never used
   void USART_RecByte( USART_TypeDef * pUSARTx, uint16_t RecData)
-..\Project\vibration.h(50): warning:  #223-D: function "Usart_RecByte" declared implicitly
-   Usart_RecByte( pUSARTx, *(str + k) );
-..\Project\vibration.h(62): warning:  #1-D: last line of file ends without a newline
+vibration_receive.h(62): warning:  #223-D: function "printf" declared implicitly
+  printf("%s\n",str);
+vibration_receive.h(126): warning:  #1-D: last line of file ends without a newline
    #endif
-..\Project\Lora.h(23): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\User\main.c: 4 warnings, 0 errors
-compiling vibration.c...
-vibration.h(29): warning:  #550-D: parameter "RecData"  was set but never used
-  void USART_RecByte( USART_TypeDef * pUSARTx, uint16_t RecData)
-vibration.h(50): warning:  #223-D: function "Usart_RecByte" declared implicitly
-   Usart_RecByte( pUSARTx, *(str + k) );
-vibration.h(62): warning:  #1-D: last line of file ends without a newline
-   #endif
-vibration.c(32): warning:  #223-D: function "RCC_AHB1PeriphCmd" declared implicitly
-  	   RCC_AHB1PeriphCmd(RCC_APB1Periph_USART3, ENABLE);
-vibration.c(75): warning:  #550-D: variable "data0"  was set but never used
-  uint16_t data0;	
-vibration.c(76): warning:  #550-D: variable "data1"  was set but never used
-  uint16_t data1;
-vibration.c(102): warning:  #177-D: variable "RxData"  was declared but never referenced
-  uint16_t RxData; 
-vibration.c: 7 warnings, 0 errors
-"..\Output\Template.axf" - 14 Error(s), 15 Warning(s).
+vibration_receive.c(123): warning:  #550-D: variable "FlagStatus"  was set but never used
+  		uint16_t  FlagStatus;
+vibration_receive.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=2272 RO-data=336 RW-data=24 ZI-data=1024  
+FromELF: creating hex file...
+"..\Output\Template.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -113,7 +54,6 @@ Package Vendor: Keil
   Z:\anzhuang\Keil_v5ARMPACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>
