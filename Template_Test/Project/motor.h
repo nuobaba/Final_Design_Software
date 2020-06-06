@@ -52,7 +52,7 @@
 
 
 void TIM_Init(void);
-
+void motor_transform(void);
 
 
 #endif

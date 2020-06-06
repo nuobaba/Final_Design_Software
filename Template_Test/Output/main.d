@@ -12,3 +12,6 @@
 ..\output\main.o: ..\Libraries\inc\stm32f10x_usart.h
 ..\output\main.o: ..\Libraries\inc\misc.h
 ..\output\main.o: ..\Project\Lora.h
+..\output\main.o: ..\Project\sys.h
+..\output\main.o: ..\Project\delay.h
+..\output\main.o: ..\Project\vibration_receive.h

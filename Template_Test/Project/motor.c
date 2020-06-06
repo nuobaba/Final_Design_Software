@@ -99,4 +99,26 @@ void TIM_Init(void)
 //		
 
 //}
+	void motor_transform()
+
+{
+	int delay_time;
+	delay_init(); //延时函数初始化
+	TIM_Init(); //定时器初始化
 	
+	delay_time = 500;
+	while(1)
+	{
+		delay_ms(delay_time);
+		TIM_SetCompare1(ADVANCE_TIM, 175); //对应180度
+        delay_ms(delay_time);
+		TIM_SetCompare1(ADVANCE_TIM, 180); //对应135度
+        delay_ms(delay_time);
+		TIM_SetCompare1(ADVANCE_TIM, 185); //对应90度
+        delay_ms(delay_time);
+		TIM_SetCompare1(ADVANCE_TIM, 190); //对应45度
+        delay_ms(delay_time);
+		TIM_SetCompare1(ADVANCE_TIM, 195); //对应0度
+	}
+}
+

@@ -22,25 +22,59 @@ Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
 Y:\Study\Final_Design\Circuit\Template_Test\Project\Template.uvprojx
-Project File Date:  05/19/2020
+Project File Date:  06/06/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Template'
+assembling startup_stm32f10x_hd.s...
+startup_stm32f10x_hd.s: error: A3900U: Unrecognized option '--c99'.
+compiling main.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\Project\Lora.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Project\vibration_receive.h(28): warning:  #550-D: parameter "RecData"  was set but never used
+  void USART_RecByte( USART_TypeDef * pUSARTx, uint16_t RecData)
+..\Project\vibration_receive.h(63): warning:  #223-D: function "printf" declared implicitly
+  printf("%s\n",str);
+..\Project\vibration_receive.h(83): warning:  #1-D: last line of file ends without a newline
+   #endif
+..\User\main.c(7): warning:  #223-D: function "VibrationInit_TX" declared implicitly
+  		VibrationInit_TX();
+..\User\main.c(9): error:  #29: expected an expression
+  	Usart_ReceiveString( 
+SART3, char *vib);
+..\User\main.c(12): error:  #20: identifier "RecMid" is undefined
+  		USART_SendData(
+SART3,RecMid[i]);
+..\User\main.c: 5 warnings, 2 errors
 compiling vibration_receive.c...
+Warning: C3910W: Old syntax, please use '--c99'.
 vibration_receive.h(28): warning:  #550-D: parameter "RecData"  was set but never used
   void USART_RecByte( USART_TypeDef * pUSARTx, uint16_t RecData)
-vibration_receive.h(62): warning:  #223-D: function "printf" declared implicitly
+vibration_receive.h(63): warning:  #223-D: function "printf" declared implicitly
   printf("%s\n",str);
-vibration_receive.h(126): warning:  #1-D: last line of file ends without a newline
+vibration_receive.h(83): warning:  #1-D: last line of file ends without a newline
    #endif
-vibration_receive.c(123): warning:  #550-D: variable "FlagStatus"  was set but never used
+vibration_receive.c(82): warning:  #550-D: variable "FlagStatus"  was set but never used
   		uint16_t  FlagStatus;
 vibration_receive.c: 4 warnings, 0 errors
-linking...
-Program Size: Code=2272 RO-data=336 RW-data=24 ZI-data=1024  
-FromELF: creating hex file...
-"..\Output\Template.axf" - 0 Error(s), 4 Warning(s).
+compiling Lora.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+lora.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+Lora.c(115): warning:  #223-D: function "GetFlagStatus" declared implicitly
+  if (
+SART3, GetFlagStatus (USART3,USART_FLAG_RXNE) != SET) //接收到八位长的字符串，接收满
+Lora.c(115): warning:  #174-D: expression has no effect
+  if (
+SART3, GetFlagStatus (
+SART3,
+SART_FLAG_RXNE) != SET) //接收到八位长的字符串，接收满
+Lora.c(157): warning:  #1-D: last line of file ends without a newline
+  }
+Lora.c: 4 warnings, 0 errors
+"..\Output\Template.axf" - 3 Error(s), 13 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,7 +88,8 @@ Package Vendor: Keil
   Z:\anzhuang\Keil_v5ARMPACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Target not created.
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

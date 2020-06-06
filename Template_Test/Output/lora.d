@@ -11,4 +11,6 @@
 ..\output\lora.o: ..\Libraries\inc\stm32f10x_rcc.h
 ..\output\lora.o: ..\Libraries\inc\stm32f10x_usart.h
 ..\output\lora.o: ..\Libraries\inc\misc.h
-..\output\lora.o: vibration.h
+..\output\lora.o: lora.h
+..\output\lora.o: sys.h
+..\output\lora.o: delay.h

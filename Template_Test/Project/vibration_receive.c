@@ -57,52 +57,11 @@ void VibrationInit_TX(void)
  
         USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);
 				
-
 	
 }
 
 
 
-/////********************接收单个字符********************/
-////void USART_RecByte( USART_TypeDef * pUSARTx, uint16_t RecData)
-////{
-
-
-////while(USART_GetFlagStatus(pUSARTx,USART_FLAG_RXNE ) == !RESET);
-
-////	USART_ReceiveData(pUSARTx);
-////	RecData = USART_ReceiveData(pUSARTx);
-
-//////判断接收寄存器满标志位;
-
-////	
-////}
-
-
-
-
-///***************** 接收字符串 **********************/
-
-//void Usart_ReceiveString( USART_TypeDef * pUSARTx, char *str)
-// {
-// 
-// while (USART_GetFlagStatus(pUSARTx,USART_FLAG_RXNE) == RESET)
-// {
-//	 unsigned int k=0;
-// do 
-//{
-// Usart_RecByte( pUSARTx, *(str + k) );
-// k++;
-// } 
-//while (*(str + k)!='\0'); 
-// /* 等待接收完成 */
-////(等待接收数据寄存器为满)
-//	 
-//printf("%s\n",str);
-//	 
-//}
-
-//}
 
 
 void USART2_IRQHandler(void)

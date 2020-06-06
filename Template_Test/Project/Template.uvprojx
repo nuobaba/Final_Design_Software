@@ -333,7 +333,7 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>-c99</MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_MD</Define>
               <Undefine></Undefine>
               <IncludePath>..\Libraries\CMSIS;..\Libraries\inc;..\User;..\Project</IncludePath>
@@ -351,7 +351,7 @@
             <useXO>0</useXO>
             <uClangAs>0</uClangAs>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>--c99</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
@@ -629,6 +629,26 @@
               <FileName>delay.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPIx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SPIx.c</FilePath>
+            </File>
+            <File>
+              <FileName>SPIx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SPIx.h</FilePath>
+            </File>
+            <File>
+              <FileName>SX1278.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SX1278.c</FilePath>
+            </File>
+            <File>
+              <FileName>SX1278.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SX1278.h</FilePath>
             </File>
           </Files>
         </Group>

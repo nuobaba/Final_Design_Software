@@ -1,0 +1,15 @@
+..\output\spix.o: SPIx.c
+..\output\spix.o: SPIx.h
+..\output\spix.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\spix.o: ..\Libraries\CMSIS\core_cm3.h
+..\output\spix.o: Z:\biaozhun\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\spix.o: ..\Libraries\CMSIS\system_stm32f10x.h
+..\output\spix.o: ..\User\stm32f10x_conf.h
+..\output\spix.o: ..\Libraries\inc\stm32f10x_exti.h
+..\output\spix.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\spix.o: ..\Libraries\inc\stm32f10x_flash.h
+..\output\spix.o: ..\Libraries\inc\stm32f10x_gpio.h
+..\output\spix.o: ..\Libraries\inc\stm32f10x_rcc.h
+..\output\spix.o: ..\Libraries\inc\stm32f10x_usart.h
+..\output\spix.o: ..\Libraries\inc\misc.h
+..\output\spix.o: ..\Libraries\inc\stm32f10x_spi.h
